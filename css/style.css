@@ -1,0 +1,406 @@
+/* ----- COLORS ----- */
+:root {
+  --main-color: #e17d09;
+  --secondary-color: #096ee1;
+  --font-color: #000;
+  --border-color: #000;
+}
+.nav_style {
+  background-color: var(--main-color);
+}
+
+/*  slider  */
+.slider-image-sizing {
+  height: 8rem;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .slider-image-sizing {
+    height: 14.225rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-image-sizing {
+    height: 12.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .slider-image-sizing {
+    height: 11.25rem;
+  }
+
+  .third-slider-custom {
+    object-position: 0% 60%;
+  }
+}
+
+/*   main   */
+
+#tarjetas-container{
+  background-image: url(/assets/gokunube.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.card-body{
+  background-image: url(/assets/fondotarjeta.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+}
+
+
+.card-title{
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+.card-text{
+  margin-top: 120px;
+  font-size: 13px;
+  text-align: center;
+  
+}
+
+.sub-title{
+  border: solid 3px #f8a406;
+  border-radius: 10px;
+}
+.titulo-pelicula{
+  background-image: url(/image/pelicula.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.center{
+  margin: auto ;
+  padding: auto;
+  width: 80%;
+  border: solid 2px white;
+  border-radius: 10px;
+}
+
+
+
+.card-border{
+  border: solid 10px white;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all ease-out 0.2s;
+}
+
+.card-border:hover{
+  transform: scale(1.05);
+}
+
+
+
+#galeria .col-lg-4{
+  margin: 0!important;
+  padding: 10px;
+  border: solid 5px rgb(88, 8, 238);
+  border-radius: 10px;
+}
+#galeria img{
+  width: 100%;
+  height: 300px;
+}
+
+#galeria img:hover{
+  border: 5px solid #f7f7f7;
+}
+
+#video, video{
+  margin: 0 auto;
+}
+.comentarios {
+  margin: 20px 0;
+}
+.form-comentarios textarea {
+  width: 100%;
+  height: 84px;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 84px;
+  max-height: 300px;
+  padding: 10px;
+  line-height: 30px;
+  border: 1px solid #4b65d1;
+  margin-bottom: 20px;
+}
+.form-comentarios .btn {
+  background: #4b65d1;
+  color:#f7f7f7;
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+.form-comentarios .btn:hover {
+  box-shadow: 0px 0px 9px rgba(0,0,0,.35)
+}
+.media {
+  border-top: 1px solid #bfbfbf;
+  padding-top: 20px;
+}
+.media img{
+  margin-right: 20px;
+}
+.media .nombre{
+  color:#4b65d1;
+  margin-bottom: 0;
+}
+.media .nombre span {
+  font-size: 12px;
+  color: #464646;
+  margin-left: 10px;
+}
+.media .comentarios {
+  margin-top: 10px;
+}
+.media .botones {
+  margin-bottom: 10px;
+}
+.media .botones a {
+  color:#acacac;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+
+
+/*   footer   */
+:root {
+  --main-color: #e17d09;
+  --secondary-color: #000;
+  --link-hover-bg-color: #000000;
+}
+
+footer li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  display: flex;
+}
+
+footer > div {
+  flex-grow: 1;
+  padding: 2rem 1rem;
+}
+
+footer .footer-social-column i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+footer .footer-social-column ul {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.footer-social-column ul li {
+  box-shadow: 0 3px 5px 0px var(--link-hover-bg-color);
+  transition: 0.2;
+}
+
+.footer-social-column ul:hover a {
+  filter: blur(1.15px);
+}
+
+.footer-social-column ul li a:hover {
+  transform: translateY(-3px);
+  scale: 1.05;
+  box-shadow: 0 5px 5px 0px var(--link-hover-bg-color);
+  filter: none;
+}
+
+footer .footer-logo-column {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+footer .footer-links-column ul {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+
+/*   asside   */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+
+  flex: 1;
+  z-index: 1;
+  
+}
+
+aside {
+  flex: 1;
+  display: block;
+  font-weight: bold;
+  background-color: orange;
+  right: 0%;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  
+
+}
+
+
+
+.container-1 {
+  width: 100%;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  padding-top: 50px;
+  
+}
+
+
+.container-1 input#search {
+  width: 160px;
+  height: 40px;
+  box-sizing:border-box;
+  background: #0d6efd;
+  border: none;
+  font-size: 14pt;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  padding-bottom: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  
+  -webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+-ms-transition: background .55s ease;
+-o-transition: background .55s ease;
+transition: background .55s ease;
+}
+
+
+.container-1 input#search::-webkit-input-placeholder {
+  color: black;
+}
+
+
+.container-1 input#search:-ms-input-placeholder {  
+  color: #65737e;  
+}
+
+.container-1 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 30px;
+  z-index: 1;
+  color: black;
+}
+
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+  outline:none;
+  background: #ffffff;
+}
+
+
+
+#dropdown {
+  width: auto;
+  height: auto;
+  vertical-align:center;
+  white-space: nowrap;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  
+}
+
+.btn-primary{
+  color: black;
+}
+
+#carousel slide {
+  width: auto;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding-top: 100px;
+  
+}
+
+
+#images{
+  width: fit-content;
+  padding-bottom: 50px;
+}
+
+
+/*rango de ancho para tablet*/
+@media screen and (min-width: 673px) and (max-width: 1000px) {
+  .ocultar-div{
+      align-content: center;
+              
+  }
+  .images{
+      width: 70%;
+      
+      
+  }
+
+
+}
+
+/*rango de ancho para smartphone*/
+@media screen and (max-width: 672px) {
+  html {
+      font-size: 12px;
+  }
+  
+  main {
+      flex-direction: column;
+  }
+  
+  main > aside {
+      flex: 0 0 200px;
+      font-size: 1.5rem;
+      bottom: 0%;
+  }
+  
+  aside{
+      width: auto;
+      height: auto;
+      
+  }
+  
+  #ocultar-div{
+      display:none;
+      
+  }
+}

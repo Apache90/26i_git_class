@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+
+:root {
+  --main-color: #e17d09;
+  --secondary-color: #096ee1;
+  --font-color: #000;
+  --border-color: #000;
+}
+
+body {
+  font-family: "PT Sans Narrow", sans-serif;
+  background-color: var(--main-color);
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.error-image {
+  width: 80%;
+  align-self: center;
+  margin-bottom: 4rem;
+}
+
+.text-box {
+  font-size: 2rem;
+  color: var(--font-color);
+  font-weight: bolder;
+  font-style: italic;
+  text-align: center;
+}
+
+.link-message {
+  font-size: 1.4rem;
+  color: var(--font-color);
+  font-weight: bolder;
+  font-style: italic;
+  text-align: center;
+  padding-top: 8rem;
+}
+
+.error-link {
+  font-size: 1.4rem;
+  color: var(--font-color);
+  font-weight: bolder;
+  font-style: italic;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out 0s;
+}
+
+.error-link:hover {
+  color: var(--secondary-color);
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .text-box {
+    font-size: 4rem;
+  }
+  .link-message {
+    font-size: 2.8rem;
+  }
+  .error-link {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .text-box {
+    font-size: 3rem;
+  }
+  .link-message {
+    font-size: 2.1rem;
+  }
+  .error-link {
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .error-image {
+    width: 40%;
+    margin-bottom: 2rem;
+  }
+  .link-message {
+    font-size: 1.8rem;
+    padding-top: 2rem;
+  }
+  .error-link {
+    font-size: 1.8rem;
+  }
+}
